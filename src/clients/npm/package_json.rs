@@ -21,7 +21,7 @@ pub struct PackageJson {
     pub maintainers: Option<Vec<PackageJsonMaintainer>>,
 }
 
-type PackageJsonDep = BTreeMap<String, String>;
+pub type PackageJsonDep = BTreeMap<String, String>;
 
 #[derive(Default, Debug, Clone, PartialEq, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
